@@ -17,7 +17,7 @@ $ docker build -t sphinx-doc .
 Mounts a host directory (`/host-dir-with-sphinx-doc`) as a container volume (`/doc`). 
 
 ``` 
-$ docker run -i -t -v /host-dir-with-sphinx-doc:/doc sphinx-doc
+$ docker run -i -t -p 80:80 -v /host-dir-with-sphinx-doc:/doc sphinx-doc
 ```
 
 ``` 
