@@ -14,4 +14,4 @@ RUN   ln -s /doc/build/html /var/www/html
 
 WORKDIR /doc
 
-CMD ["/bin/bash"] 
+CMD service apache2 start && /bin/bash 
